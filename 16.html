@@ -1,0 +1,54 @@
+<!-- lecture 18 appendTo and prependTo method -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jquery 18</title>
+    <style>
+        body
+        {
+            font-family: Arial;
+        }
+        h1
+        {
+            font-size: 25px;
+
+        }
+        #box
+        {
+            background: lightgreen;
+            padding: 10px;
+            border: 1px solid #000;
+        }
+        
+    </style>
+    </head>
+    <body>
+        <h1>jquery appendTo and prependTo methods</h1>
+        <div id="box">
+            <h2>test box</h2>
+            <p>hello hello <span>every one</span>ajdfjkfvjfb</p>
+
+        </div>
+        <br>
+
+        <button id="appendBtn">AppendTo</button>
+        <button id="prependBtn">PrependTo</button>
+
+        <script type="text/javascript" src="jquery.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $('#appendBtn').click(function(){
+                    $('<h2>good to see you</h2>').appendTo('#box');
+                });
+
+
+                $('#prependBtn').click(function(){
+                    $('<h3>good to see you</h3><p>this is just a text</p>').prependTo("#box");
+                });
+
+
+            });
+        </script>
+    </body>
+</html>
