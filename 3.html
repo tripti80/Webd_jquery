@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jquery 3</title>
+        <style>
+            body
+            {
+                font-family: arial;
+            }
+            #box
+            {
+                padding: 10px;
+                border: 1px solid #000;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>jQuery3</h1>
+        <div id = "box" class = "test">
+            <h2>first box</h2>
+            <p>hello everyone</p>
+        </div>
+        <ul id = "list">
+            <li>Orange</li>
+            <li class="test">banana</li>
+            <li>grapes</li>
+            <li class="test">apple</li>
+            <li>guava</li>
+        </ul>
+        <script type="text/javascript" src="jquery.js"></script>
+        <!-- <script>
+            $(document).ready(function(){
+            //    $("#list").css("color","red");
+            //  $("#list li").css("border","2px solid red"); //target all li in list
+
+            });
+        </script> -->
+        <script>
+            $(document).ready(function(){
+                // $(".test").css("border","2px solid red");
+                // $("*").css("border","2px solid red"); //target all tags
+                // $("li:first").css("border","2px solid red"); //target first li in the page
+                // $("li:first-child").css("border","2px solid red"); //target first li in ul in the page
+                // $("ul li:eq(2)").css("border","2px solid red"); //target grape
+                // $("ul li:gt(2)").css("border","2px solid red"); //target greater than 2----apple,guava
+                // $("ul li:lt(2)").css("border","2px solid red"); //target lower than 2----orange,banana
+
+            });
+        </script>
+
+    </body>
+</html>
