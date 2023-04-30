@@ -1,0 +1,48 @@
+<!-- lecture 10 -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jquery 10</title>
+        <style>
+            body
+            {
+                font-family: Arial;
+            }
+            #box
+            {
+                background: pink;
+                padding: 10px;
+                border: 1px solid #000;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>jquery 10</h1>
+
+        <div id="box" class="test abc">
+            <h2>test box</h2>
+            <p>hello hello <span>every one</span>ajdfjkfvjfb</p>
+        </div>
+
+        <script type="text/javascript" src="jquery.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                // var a = $('#box').html();  //it shows the the html of box
+                var a = $('#box p').html();  //it shows the the html of p of box
+                console.log(a);
+
+
+                //var a = $('#box').text();
+                var a = $('#box p').text();  //it hides the tags & only show the text
+                console.log(a);
+
+
+                var a = $('#box').attr('class');  //it gives attributes of class(test and abc)
+                console.log(a);
+            });
+        </script>
+    </body>
+</html>
