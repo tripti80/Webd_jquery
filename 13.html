@@ -1,0 +1,71 @@
+<!-- lecture 15 append and prepend method -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jquery 15</title>
+    <style>
+        body
+        {
+            font-family: Arial;
+        }
+        h1
+        {
+            font-size: 25px;
+
+        }
+        #box
+        {
+            background: lightgreen;
+            padding: 10px;
+            border: 1px solid #000;
+        }
+        
+    </style>
+    </head>
+    <body>
+        <h1>jquery append and prepend methods</h1>
+        <!-- <div id="box">
+            <h2>test box</h2>
+            <p>hello hello <span>every one</span>ajdfjkfvjfb</p>
+
+        </div> -->
+        <br>
+
+        <ol>
+            <li>list item 1</li>
+            <li>list item 2</li>
+            <li>list item 3</li>
+            <li>list item 4</li>
+
+        </ol>
+        <br>
+
+        <button id="appendBtn">Append</button>
+        <button id="prependBtn">Prepend</button>
+
+        <script type="text/javascript" src="jquery.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                // $('#appendBtn').click(function(){
+                //     $('#box').append("<h2>good to see you</h2>");
+                // });
+
+
+                // $('#prependBtn').click(function(){
+                //     $('#box').prepend("<h3>good to see you</h3>");
+                // });
+
+
+                $('#appendBtn').click(function(){
+                    $('ol').append("<li>list item new</li>");
+                });
+
+
+                $('#prependBtn').click(function(){
+                    $('ol').prepend("<li>new list item</li>");
+                });
+            });
+        </script>
+    </body>
+</html>
