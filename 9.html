@@ -1,0 +1,49 @@
+<!-- lecture 11 -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jquery 11</title>
+        <style>
+            body
+            {
+                font-family: Arial;
+            }
+            #box
+            {
+                background: pink;
+                padding: 10px;
+                border: 1px solid #000;
+            }
+            .red
+            {
+                color: red;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="box" class="test">
+            <h2>test box</h2>
+            <p>hello hello <span>every one</span>ajdfjkfvjfb</p>
+        </div>
+        <br>
+        <button id="clickbutton">Set value</button>
+
+        <script type="text/javascript" src="jquery.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $('#clickbutton').click(function(){
+                     $('#box h2').text("hello everyone"); //add text in h2 of box
+                    // $('#box p').text("this is new text"); //add text in p of box
+
+                    $('#box p').html("this <b>is new</b> text"); //add html in p of box
+
+                    $('#box h2').attr("class","red"); //add red color
+
+                    
+                });
+            });
+        </script>
+    </body>
+</html>
