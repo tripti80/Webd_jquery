@@ -1,0 +1,57 @@
+<!-- lecture 12 class methods -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jquery 12</title>
+        <style>
+            body
+            {
+                font-family: Arial;
+            }
+            #box
+            {
+                border: 1px solid #000;
+            }
+            .first
+            {
+                background: yellowgreen;
+            }
+            .second
+            {
+                background: brown;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>jquery class methods</h1>
+        <div id="box">
+            <h2>test box</h2>
+            <p>hello hello <span>every one</span>ajdfjkfvjfb</p>
+        </div>
+        <br>
+        <button id="addbutton">add class</button>
+        <button id="removebutton">remove class</button>
+        <button id="togglebutton">toggle class</button>
+
+
+        <script type="text/javascript" src="jquery.js"></script>
+
+        <script>
+            $('#addbutton').click(function(){
+                $('#box,h1').addClass("first");
+            });
+
+            $('#removebutton').click(function(){
+                $('#box').removeClass("first second");
+            });
+
+            $('#togglebutton').click(function(){
+                $('#box').toggleClass("second");
+            });
+
+            
+        </script>
+    </body>
+
+</html>
