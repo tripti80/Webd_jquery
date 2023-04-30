@@ -1,0 +1,61 @@
+<!-- lecture 21 wrap and unwrap method -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jquery 21</title>
+    <style>
+        body
+        {
+            font-family: Arial;
+        }
+        h1
+        {
+            font-size: 25px;
+
+        }
+        #box
+        {
+            background: lightgreen;
+            padding: 10px;
+            border: 1px solid #000;
+        }
+        #test
+        {
+            background: pink;
+            padding: 5px;
+
+        }
+        
+    </style>
+    </head>
+    <body>
+        <h1>jquery wrap and unwrap methods</h1>
+        <div id="box">
+            <h2>test box</h2>
+            <p>hello hello <span>every one</span>ajdfjkfvjfb</p>
+
+        </div>
+        <br>
+
+        <button id="wrapBtn">Wrap</button>
+        <button id="unwrapBtn">Unwrap</button>
+
+        <script type="text/javascript" src="jquery.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $('#wrapBtn').click(function(){
+                    // $('#box p').wrap('<div id="test"></div>');
+                    $('#box p').wrap('<h2></h2>');
+
+                });
+
+                $('#unwrapBtn').click(function(){
+                     $('#box p').unwrap();
+                });
+
+
+            });
+        </script>
+    </body>
+</html>
