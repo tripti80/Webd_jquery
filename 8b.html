@@ -1,0 +1,62 @@
+<!-- lecture 10 -->
+<!-- we can get any value of form from val method -->
+
+<!DOCTYPE html>
+<html id="main">
+    <head>
+        <title>jquery 10</title>
+        <style>
+            body
+            {
+                font-family: Arial;
+            }
+            #box
+            {
+                background: pink;
+                padding: 10px;
+                border: 1px solid #000;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>get methods</h1>
+        <form action="" id="sform">
+
+            <label for="">Name</label>
+            <input type="text" id="sname">
+        <br>
+
+            <label for="">Class</label>
+            <input type="text" id="sclass">
+            <br>
+
+            <label for="">Country</label>
+            <select id="scountry">
+                <option value="India">India</option>
+                <option value="australia">australia</option>
+                <option value="sri lanka">sri lanka</option>
+                <option value="iran">iran</option>
+                <option value="nepal">nepal</option>
+                <option value="usa">usa</option>
+            </select>
+            <br><br>
+
+            <input type="submit">
+        </form>
+
+        <script type="text/javascript" src="jquery.js"></script>
+    
+        <script>
+            $(document).ready(function(){
+                $('#sform').submit(function(){
+                    var name = $('#sname').val();
+                    var classname = $('#sclass').val();
+                    var country = $('#scountry').val();
+
+                    alert("hello " + name + " Class :" + classname + " Country: " + country);
+                });
+            });
+        </script>
+
+    </body>
+</html>
