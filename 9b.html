@@ -1,0 +1,47 @@
+<!-- lecture 11 -->
+<!-- we can set any value of form from val method -->
+
+<!DOCTYPE html>
+<html id="main">
+    <head>
+        <title>jquery 10</title>
+        <style>
+            body
+            {
+                font-family: Arial;
+            }
+            #box
+            {
+                background: pink;
+                padding: 10px;
+                border: 1px solid #000;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>get methods</h1>
+        <form action="" id="sform">
+
+            <label for="">Name</label>
+            <input type="text" id="sname">
+        <br>
+
+            <label for="">Class</label>
+            <input type="text" id="sclass">
+            <br>
+
+            <input type="submit">
+        </form>
+
+        <script type="text/javascript" src="jquery.js"></script>
+    
+        <script>
+            $(document).ready(function(){  
+                 $('#sname').val("hello hello");
+                 $('#sclass').val("btech");
+               
+            });
+        </script>
+
+    </body>
+</html>
