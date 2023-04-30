@@ -1,0 +1,64 @@
+<!-- lecture 22 wrapAll and wrapInner method -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jquery 22</title>
+    <style>
+        body
+        {
+            font-family: Arial;
+        }
+        h1
+        {
+            font-size: 25px;
+
+        }
+        #box
+        {
+            background: lightgreen;
+            padding: 10px;
+            border: 1px solid #000;
+        }
+        #test
+        {
+            background: pink;
+            padding: 5px;
+
+        }
+        .red
+        {
+            color: red;
+        }
+        
+    </style>
+    </head>
+    <body>
+        <h1>jquery wrapAll and wrapInner methods</h1>
+        
+            <p>hello hello every one all good</p>
+            <p>hello hello every one all good</p>
+
+
+        <br>
+
+        <button id="wrapAllBtn">WrapAll</button>
+        <button id="wrapInnerBtn">WrapInner</button>
+
+        <script type="text/javascript" src="jquery.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $('#wrapAllBtn').click(function(){
+                    $('p').wrapAll('<div id="test"></div>');
+
+                });
+
+                $('#wrapInnerBtn').click(function(){
+                     $('h1').wrapInner('<span class="red"></span>');
+                });
+
+
+            });
+        </script>
+    </body>
+</html>
